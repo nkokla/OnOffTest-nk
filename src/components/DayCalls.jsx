@@ -11,13 +11,6 @@ const DayCallsWrapper = styled.div`
 `;
 
 function DayCalls({ data }) {
-  console.log(data[0].date);
-  console.log(
-    new Intl.DateTimeFormat("en-US", {
-      day: "numeric",
-      month: "long",
-    }).format(new Date(data[0].date))
-  );
   const dataGroup = groupBy(
     data.sort(
       (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()

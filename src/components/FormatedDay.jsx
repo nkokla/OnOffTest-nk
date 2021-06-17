@@ -7,7 +7,6 @@ const DayHeader = styled.div`
 `;
 
 const FormatedDay = ({ date }) => {
-  console.log(date);
   const formatedDate = new Intl.DateTimeFormat("en-US", {
     day: "numeric",
     month: "long",
